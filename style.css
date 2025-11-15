@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blueviolet;
+}
+.head{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+.generate-btn{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    width: 250px;
+    height: 60px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid gray;
+    /* padding: 25px; */
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
