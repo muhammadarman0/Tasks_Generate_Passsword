@@ -1,15 +1,21 @@
-let arrPass = "ewqrqer43rrrfvrwg4t359358290580514958jvzdvns!@#$#%&*(??><>L`~dP:L{{}|+_+==";
+function GeneratePassword(){
 
-let pass = "";
+    let password = "fmevqroafsfm34i9942eifj%^&*&(%$#$!))+_?><:{}|xzkmcsalcaBSE"
+    let pass = ""
 
-// console.log(arrPass[3]);
+ 
+    for (let i = 0;i<12;i++){
 
-function userPassword() {
-    for (let i = 0; i < 12; i++) {
-        // let num  =()
-        let randomNum = (Math.round(Math.random() * arrPass.length));
-        // let onlyOneNum = Math.floor(num)
-        pass += arrPass[randomNum]
+       pass += password[Math.floor(Math.random() * password.length)]
+
+        
     }
-    document.writeln("Pasword --> ",pass);
-}
+    let input = document.getElementById("pass")
+
+   input.innerHTML = `Password:  ${pass} `
+
+ console.log("Random pass",pass);
+ 
+    
+} 
+ 
